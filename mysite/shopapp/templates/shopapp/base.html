@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+      {% block title %}
+      Basetitle
+      {% endblock %}
+    </title>
+</head>
+<body>
+{% block body %}
+Basebody
+{% endblock %}
+
+<div> {% lorem 5 p %}
+{% now 'H:i' %}</div>
+
+</body>
+</html>

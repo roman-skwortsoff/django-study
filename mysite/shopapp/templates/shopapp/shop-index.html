@@ -1,0 +1,24 @@
+{% extends 'shopapp/base.html' %}
+
+
+
+{% block body %}
+<div> Time running: {{ timerunning }}</div>
+
+<div>
+    <ul>
+    {% for item, price in products %}
+    <li> {{item}} стоит {{price}} USD </li>
+        {% if price >= 500 %}
+        BEST Prise
+        {% endif %}
+
+        {% empty %}
+        is empty
+
+    {% endfor %}
+</ul>
+</div>
+
+<h1>Hello Shopindex</h1>
+{% endblock %}
