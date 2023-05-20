@@ -1,0 +1,29 @@
+{% extends 'shopapp/base.html' %}
+
+{% block title %}
+    Start
+{% endblock %}
+
+
+{% block body %}
+
+<div> Сейчас {% now 'H:i' %}</div>
+
+<h1>Это стартовая страница домашнего проекта</h1>
+<div> На данный момент доступны следующие страницы: </div>
+<ul>
+    <li>
+        <a href="/shop">Интернет-магазин</a>
+    </li>
+    <li>
+        <a href="/groups">Группы пользователей</a>
+    </li>
+</ul>
+
+
+<ul>
+
+</ul>
+
+
+{% endblock %}
